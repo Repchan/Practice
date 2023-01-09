@@ -4,6 +4,10 @@
 	margin:0;
 	padding: 0;
 }
+a{
+text-decoration: none;
+color:white;
+}
 .link{
 	font-family: 'Nunito Sans';
 	font-style: normal;
@@ -43,6 +47,8 @@ body,html{
 	width:1256px;
 	padding: 0;
 	margin: 0 auto;
+	text-align: center;
+	box-sizing: border-box;
 }
 .header{
 	background: #131313;
@@ -95,11 +101,10 @@ nav ul li a{
 	color:white;
 	text-decoration: none;
 }
-ul li .active-link{
+nav ul li .active-link{
 	text-decoration: none;
 }
 .button{
-	display:inline-block;
 	width:200px;
  	height: 51px;
  	font-family: 'Nunito Sans';
@@ -113,6 +118,8 @@ ul li .active-link{
 	text-decoration: none;
 	text-align: center;
 	line-height: 51px;
+	border:none;
+	border-radius: 2px;
 }
 .contact .button{
 	
@@ -170,6 +177,10 @@ ul li .active-link{
 	margin-top:19px;
 	margin-bottom:41px;
 	height: 89px;
+	text-align: left;
+}
+.buttons{
+	text-align: left;
 }
 .buttons .button{
 	background: #E3B873;
@@ -225,6 +236,7 @@ ul li .active-link{
 	font-size: 18px;
 	line-height: 25px;
 	margin-bottom: 9px;
+	text-align: left;
 }
 .grid_card .subtitle{
 	font-family: 'Nunito Sans';
@@ -291,6 +303,7 @@ ul li .active-link{
 }
 .online_control{
 	margin-top:-324px;
+	margin-bottom: 147.85px;
 }
 .online_control .container{
 	width:817px;
@@ -372,19 +385,10 @@ ul li .active-link{
 	border-radius: 2px;
 	box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
 }
-.online_form label{
-	font-family: 'Nunito Sans';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 21px;
-	color: rgba(54, 54, 54, 0.5);
-	display:block;
-}
 .online_form p{
 	text-align: left;
 }
-#name , #phone{
+#name , #phone ,#email{
 	border:none;
 	border-bottom: 1px solid #3636364D;
 	color:#363636;
@@ -395,8 +399,9 @@ ul li .active-link{
 	line-height: 23px;
 	display: block;
 	width:231px;
+	background: none;
 }
-.online_form label{
+label{
 	font-family: 'Nunito Sans';
 font-style: normal;
 font-weight: 400;
@@ -440,4 +445,278 @@ color: #181818;
 }
 .checkbox:checked + .fake::before{
   opacity: 1;
+}
+.repair{
+	background: url("../images/bg/image 6.1 (1).png") no-repeat ;
+	background-position:bottom 81px left 0 ;
+}
+.repair .subtitle{
+	text-align: center;
+	line-height: 28px;
+	margin-bottom: 13px;
+}
+.repair_logo{
+	margin-bottom: 31px;
+	}
+.repair_cards{
+	display:flex;
+	justify-content: space-between;
+}
+.card{
+	height: 608px;
+	width:392px;
+	padding-top:294px;
+	text-align: center;
+	background-position: top;
+	box-sizing: border-box;
+}
+.card_ul{
+	display: block;
+	width:330px;
+	height: 286px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+	text-align: left;
+	padding-left:34px;
+	padding-top:25px;
+	box-sizing: border-box;
+	position: relative;
+}
+.card_ul h3{
+	font-family: 'Yeseva One';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #363636;
+	margin-bottom: 13px;
+}
+.card_ul ul li{
+	list-style:none;
+	line-height: 27px;
+	color: #959595;
+	font-size: 13px;
+}
+.card_ul ul li::before{
+	content:"• ";
+	color:#959595;
+}
+.card:nth-child(1){
+	background: url("../images/bg/image.jpg") no-repeat;
+}
+.card:nth-child(2){
+	background: url("../images/bg/image 3.jpg") no-repeat;
+}
+.card:nth-child(3){
+	background: url("../images/bg/image 3 (1).jpg") no-repeat;
+}
+.button_repair{
+	position: absolute;
+	left:0;
+	bottom:-26px;
+	font-family: 'Yeseva One';
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	width:228px;
+	height: 54px;
+}
+.contact_description{
+	margin-left:150px;
+}
+.line{
+	display: flex;
+	width:473.62px;
+	text-align: left;
+	font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+align-items: center;
+color: #363636;
+margin-bottom: 95px;
+}
+.line:last-child{
+	margin-bottom: 0;
+}
+.circle{
+	background: #E3B873;
+	border: 8px solid #FFFFFF;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+	border-radius: 30px;
+	min-width:41.76px;
+	min-height: 41.76px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Yeseva One';
+	font-size: 18px; 
+	color: #FFFFFF;
+	line-height: 25px;
+}
+.contact_form{
+	margin-top:124px;
+	padding-top:117px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.form{
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: #131313;
+	box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+	color: white;
+	padding:28px 49px 27px;
+}
+.form label{
+	color:rgba(255, 255, 255, 0.5);
+	font-size: 13px;
+  line-height: 21px;
+}
+.form p{
+	text-align: left;
+	margin-bottom: 48px;
+}
+.form p:last-child{
+	margin-bottom: 0;
+}
+.form #name ,.form p #phone ,.form p #email{
+	border-bottom:1px solid rgba(255, 255, 255, 0.15);
+	width:408px;
+}
+.form input::-webkit-input-placeholder {
+	font-family: 'Nunito Sans';
+	color:#FFFFFF;
+	font-size: 14px;
+  line-height: 23px;
+}
+.form h3{
+	font-family: 'Nunito Sans';
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 26px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.form_input{
+	margin-top:39px;
+}
+.form .text{
+	color:white;
+
+}
+.form .first-checkbox{
+	text-align: left;
+	margin-top:16px;
+}
+.form .btn{
+	text-align: right;
+	margin-top:39px;
+}
+.form .btn .button{
+	width:213px;
+	border-radius: 0;
+}
+.pig_logo{
+	flex-grow: 1;
+	margin-right:31.5px;
+	display:flex;
+	margin-top:35.5px;
+	justify-content: flex-end;
+
+}
+.pig_logo .logo{
+	display: flex;
+	align-items: center;
+	
+	width:441px;
+}
+.pig_logo .logo p{
+	font-family: 'Nunito Sans';
+	font-size: 18px;
+	line-height: 26px;
+	color: #E3B873;
+	text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+	margin-left:25px;
+}
+.logo_circle{
+	background: #E3B873;
+	width:72px;
+	height: 72px;
+	border-radius: 50%;
+	position: relative;
+}
+.logo_circle::after{
+	content:url("../images/icons/Group (3).svg");
+	position: absolute;
+	 top:18px;
+	 left:18px;
+}
+.fantasies{
+	margin-top:242px;
+	background: url("../images/bg/image 5.1.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 864px;
+}
+.fantasies::before{
+	content:'';
+	position: absolute;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.fantasies .container{
+	display:flex;
+	justify-content: space-between;
+	padding:137px 0 97px;
+	position: relative;
+	z-index: 1;
+	text-align: left;
+}
+.fantasies_description{
+	min-width:411px;
+	margin-right:77px;
+}
+.fantasies_description ul{
+	list-style: none;
+	
+	margin-top: 47px;
+	color:white;
+}
+.fantasies_description ul li{
+	font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+margin-bottom: 25px;
+}
+.fantasies_description ul li:last-child{
+	margin-bottom: 0;
+}
+.fantasies_images{
+	display: flex;
+	justify-content: space-between;
+}
+.column_image{
+width:354px;
+}
+.first_column_image{
+	margin-right: 43px;
+	margin-top:-178px;
+}
+.second_column_image{
+	margin-top: -250px;
+}
+.first_column_image img:first-child , .second_column_image img:first-child{
+	margin-bottom: 35px;
+}
+.fantasies_description ul li .active-link{
+border-bottom: 1px solid #E3B873;
+text-decoration: none;
 }

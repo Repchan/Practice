@@ -1,0 +1,160 @@
+@media (max-width:1300px){
+	.first-block-main .button:first-child{
+		margin-bottom: 26px;
+	}
+	.first-block .first-block-main .buttons .button {
+    	width: 100%;
+	}
+	.buttons .button {
+		margin:0;
+   		 max-width: 100%;
+   		 border-radius: 0;
+	}
+	.contact button{
+		display: none;
+	}
+	.container{
+		min-width: 340px;
+		padding:0 18px;
+	}
+	.navbar nav {
+		padding:0 20px;
+	}
+	.Completed_projects_content{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+	}
+	.Completed_projects_description{
+		max-width: 100%;
+		align-items: center;
+		margin-top:36px;
+	}
+	.Completed_projects_description > .subtitle{
+		text-align: center;
+		padding: 0 14px;
+		
+	}
+	.Completed_projects_block{
+		padding: 0;
+	}
+	.photo_mobile{
+		display: block;
+		min-height:242px ;
+		min-width: 340px;
+		margin-top:36px;
+		margin-bottom: 36.45px;
+	}
+	.mobile_slider{
+		box-sizing: border-box;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.mobile_slider img:nth-of-type(2n + 1){
+		min-width:36px;
+		min-height: 36px;
+		position: absolute;
+	}
+	.mobile_slider img:first-child{
+		left:14px;
+		transform:rotate(-180deg);
+	}
+	.mobile_slider img:nth-child(3){
+		right:14px;
+	}
+	.mobile_slider img:nth-child(2){
+		max-width:100%;
+		height: auto;
+	}
+	.mobile_slider img:last-child{
+		display: none;
+	}
+	.description_grid{
+		grid-template-columns:auto auto;
+		grid-gap: 34px;
+		margin-bottom: 58px;
+	}
+	.Completed_projects_photo{
+		display: none;
+	}
+	.description_slider{
+		display: none;
+	}
+	.online_control{
+		margin: 0;
+		background-color: #131313;
+		
+	}
+	.online_control .container .online_control_content{
+		position: relative;
+	}
+	.online_control_content .video img:first-child , .online_control_content .video img:nth-child(2){
+		width: 100%;
+		height: auto;
+	}
+	.video{
+		margin-bottom: 28px;
+	}
+	.online_header{
+		padding: 0;
+		margin-bottom: 40px;
+	}
+	.online_header .title{
+		font-size: 22px;
+		line-height: 138.6%;
+		color: #FFFFFF;
+		margin-bottom:19.79px;
+	}
+	.online_control_content > p{
+		color: #FFFFFF;
+		margin-top: 21.46px;
+	}
+	.online_control_content .online_form{
+		margin:0;
+		text-align: center;
+		margin-top: 61px;
+	}
+	.online_control_content .online_form p {
+		width:100%;
+		border-bottom: 1px solid rgba(255,255,255, 0.7);
+		padding-bottom: 8px;
+	}
+	.online_control_content .online_form label{
+		font-size: 13px;
+		line-height: 21px;
+		color: rgba(255, 255, 255, 0.5);
+		font-weight: 400;
+	}
+	#name , #phone ,#email{
+		width:100%;
+		font-size: 14px;
+		line-height: 19px;
+		border:none;	
+		padding: 0;
+	}
+	.online_form input::-webkit-input-placeholder {
+		font-family: 'Nunito Sans';
+		color:#FFFFFF;
+	}
+	.online_form .button{
+		width:100%;
+		position: absolute;
+		bottom: -25.5px;
+		border-radius: 0;
+	}
+	.online_control_content {
+		padding-bottom: 88px;
+	}
+	.online_control_content .first-checkbox{
+		margin-top: 26.5px;
+		text-align: left;
+	}
+	.online_control_content .first-checkbox .text{
+		color:#FFF;
+		font-size: 14px;
+		line-height: 23px;
+	}
+}

@@ -384,10 +384,9 @@ nav ul li .active-link{
 .online_form p{
 	text-align: left;
 }
-#name , #phone ,#email{
+#name , #phone ,#email ,#text_question{
 	border:none;
 	border-bottom: 1px solid #3636364D;
-	color:#363636;
 	font-family: 'Nunito Sans';
 	font-style: normal;
 	font-weight: 400;
@@ -396,6 +395,7 @@ nav ul li .active-link{
 	display: block;
 	width:231px;
 	background: none;
+
 }
 label{
 	font-family: 'Nunito Sans';
@@ -463,8 +463,9 @@ color: #181818;
 	width:392px;
 	padding-top:294px;
 	text-align: center;
-	background-position: top;
+	background-position: center;
 	box-sizing: border-box;
+	background-size: cover;
 }
 .card_ul{
 	display: block;
@@ -686,6 +687,9 @@ margin-bottom: 95px;
 	margin-top: 47px;
 	color:white;
 }
+.mobile_slider_fantasy{
+	display: none;
+}
 .fantasies_description ul li{
 	font-size: 20px;
 line-height: 24px;
@@ -811,8 +815,8 @@ box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 .question{
 	margin-left:auto;
 	margin-right:auto;
-	width:883px;
-	height: 445px;
+	max-width:883px;
+	min-height: 445px;
 	position: absolute;
 	top: -222px;
 	left:0;
@@ -834,6 +838,12 @@ color: rgba(255, 255, 255, 0.5);
 .question_form input::-webkit-input-placeholder {
 	font-family: 'Nunito Sans';
 	color:#FFFFFF;
+}
+.question_form #name , .question_form #phone , .question_form #email , .question_form #text_question{
+	color:white;
+}
+.question_form #text_question{
+	border: none;
 }
 .question_input{
 	display: flex;
@@ -898,4 +908,7 @@ color: rgba(255, 255, 255, 0.5);
 	display: flex;
 	justify-content: center;
 
+}
+.mobile_photo_map{
+	display: none;
 }

@@ -128,7 +128,7 @@
 		color: rgba(255, 255, 255, 0.5);
 		font-weight: 400;
 	}
-	#name , #phone ,#email{
+	#name , #phone ,#email , #text_question{
 		width:100%;
 		font-size: 14px;
 		line-height: 19px;
@@ -156,5 +156,106 @@
 		color:#FFF;
 		font-size: 14px;
 		line-height: 23px;
+	}
+	.repair{
+		padding-top: 83px;
+		background:none;
+	}
+	.repair_cards{
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.card:nth-child(2) , .card:nth-child(3){
+		margin-top: 79px;
+	}
+	.card{
+	width:392px;
+	}
+	.contact_form{
+		display: none;
+	}
+	.fantasies{
+		background:none;
+		margin-top:55px;
+		height: auto;
+		z-index: 2;
+	}
+	.fantasies .container{
+		justify-content: center;
+		padding: 0;
+	}
+	.fantasies::before{
+		background-color:rgba(0, 0, 0, 0);
+	}
+	.fantasies_description{
+		text-align: center;
+		margin:0;
+	}
+	.fantasies_description ul{
+		display: none;
+	}
+	.fantasies_images{
+		display: none;
+	}
+	.mobile_slider_fantasy{
+		display: block;
+		margin:0 auto;
+		min-height:242px ;
+		max-width: 340px;
+		margin-top:36px;
+		
+	}
+	.our_clients{
+		display: none;
+	}
+	.question{
+		position: static;
+		z-index: -2;
+		margin-top: -121px;
+		padding-top:172px;
+	}	
+	.question_form{
+		padding: 0;
+	}
+	.last_block{
+		background:none;
+		background-color:#181818;
+	}
+	.question_input{
+		flex-direction: column;
+		row-gap: 63px;
+	}
+	.question_input p{
+	flex-basis: auto;
+	flex-grow: 1;
+	padding-bottom: 8px;
+	}
+	.question_input p:last-child{
+		margin-bottom: 0;
+	}
+	.question_form .subtitle{
+	margin-bottom: 52px;
+	}
+	.question_input label{
+		font-size: 14px;
+		line-height: 23px;
+	}
+	.question_input{
+		margin-bottom: 21.63px;
+	}
+	.first-checkbox{
+		text-align: left;
+		margin-bottom:67px ;
+	}
+	.button{
+		width: 100%;
+	}
+	.last_block .adress{
+		padding: 0;
+		margin-top:46px;
+	}
+	.map{
+		padding-bottom: 35px;
 	}
 }

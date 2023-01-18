@@ -1,4 +1,11 @@
 @media (max-width:1300px){
+
+	.container{
+		overflow-x:hidden ;
+	}
+	*{
+		margin:0;
+	}
 	.first-block-main .button:first-child{
 		margin-bottom: 26px;
 	}
@@ -135,7 +142,7 @@
 		border:none;	
 		padding: 0;
 	}
-	.online_form input::-webkit-input-placeholder {
+	.online_form #name, .online_form #phone {
 		font-family: 'Nunito Sans';
 		color:#FFFFFF;
 	}

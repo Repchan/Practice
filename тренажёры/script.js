@@ -233,10 +233,60 @@
 
 //Задание 8 Ассоциативные массивы
 
-let map = new Map();
-map.set(`name` , 'Misha');
-map.set(`lastName` , `Reprintsev`);
-map.set(`age` , 20);
-for(let keys of map.keys()){
-	console.log(`Ключ — ${keys}, значение — ${map.get(keys)}`);
-}
+// let map = new Map();
+// map.set(`name` , 'Misha');
+// map.set(`lastName` , `Reprintsev`);
+// map.set(`age` , 20);
+// for(let keys of map.keys()){
+// 	console.log(`Ключ — ${keys}, значение — ${map.get(keys)}`);
+// }
+
+//Функции тренажёр 1
+
+// let countDown = function(n){
+// 	for(;n > 0;n--){
+// 		console.log(n);
+// 	}
+// }
+// countDown(5)
+
+//Функции тренажёр 2
+
+// let getPercents = function(percent, number){
+// 	console.log(number * (percent/100));
+// }
+// getPercents(30, 200)
+
+//Функции тренажёр 3
+
+// let repeatWord = function(word, count){
+// 	for(let i = 1;i<=count;i++){
+// 		console.log(word + i)
+// 	}
+// }
+// repeatWord('слово', 3)
+
+//Функции тренажёр 4
+
+// function createAdder(a){
+// 	return function addA(b){
+// 		return(a+b);
+// 	}
+// }
+	
+// const add5 = createAdder(5);
+// console.log(add5(5));
+// console.log( add5(12) )
+
+//Функции тренажёр 5
+
+// let monthArr = [`январь` , `февраль`, `март`, `апрель`, `май`, `июнь`, `июль`, `август`, `сентябрь`, `октябрь`, `ноябрь`, `декабрь`]
+// function getMonth(m){
+// 	if(m>0 && m<=12){
+// 		return console.log(monthArr[m-1]);
+// 	}
+// 	else{
+// 		return console.log(`Неверное значение`);
+// 	}
+// }
+// getMonth(10)

@@ -10,21 +10,12 @@
 // }, 1000, a,  b); 
 // const timeoutId = setTimeout(function(){clearInterval(intervalId)}, (b+1)*1000 - a *1000);
 // })(5, 15)
-function isPangram(string){
-  let arr = Array.from(string.toUpperCase());
-   for(let x =0;x<arr.length;x++){
-    	if(arr[x] == ` ` || arr[x] == `.` || parseInt(arr[x])>= 0 || arr[x] == `,`){
-    		arr.splice(x, 1);
-    		x--
-    	}
-    }
-  const obj = Object.assign({}, arr); 
-  console.log(Array.from(obj))
-  if(arr.length == 26){
-  	return true
+function getMiddle(s)
+{
+  if(s.length % 2 == 0){
+    return( s[s.length/2-1] + s[s.length/2])
   }
   else{
-  	return false;
+    return(s[Math.floor(s.length/2)])
   }
 }
-isPangram("ABCD45EFGH,IJK,LMNOPQR56STUVW3XYZ");

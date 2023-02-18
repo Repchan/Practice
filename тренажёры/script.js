@@ -315,3 +315,95 @@
 // alert( sayHello() );
 // alert( sayHello('Дима') );
 // alert( sayHello('Евгений', 'Петров', 25, 'Здравствуйте, ') );
+
+// Задание 1
+// Напишите функцию match, которая принимает 2 строки и возвращает true, если эти строки равны без учета регистра. Например, match('hEllO', 'HELLo') должен вернуть true.
+
+// let equalCheck = function(first , second){
+//     if(typeof first == `string` && typeof second == `string`){
+//         if(first.toLowerCase() == second.toLowerCase()){
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }
+//     }
+//     else{
+//         if(first == second){
+//             return true;
+//         }
+//         else {
+//             return false;
+//         }
+//     }
+    
+// }
+// console.log(equalCheck(`hello` , `heLlo`))
+// console.log(equalCheck(123 , 123));
+// console.log(equalCheck(`hello` , `helo`));
+// console.log(equalCheck(1234 , 123));
+
+//
+
+// function extractSubredditName(url) {
+//   const parsedUrl = new URL(url);
+//   const pathParts = parsedUrl.pathname.split('/');
+//   console.log(pathParts);
+//   const subredditName = pathParts[2];
+//   return subredditName;
+// }
+
+// const subredditUrl = 'https://reddit.com/r/javascript';
+// const subredditName = extractSubredditName(subredditUrl);
+// console.log(subredditName);
+
+// Напишите функцию reverseAndNegate(arr), которая принимает массив чисел и возвращает перевернутый отрицательный массив.
+
+// function reverseAndNegate(arr){
+//     for(let i = 0;i<arr.length;i++){
+//         arr[i] = arr[i] * (-1)
+//     }
+//     return arr.reverse();
+// }
+
+// console.log(reverseAndNegate([1,-4,22,15,-2,0,-3]));
+
+// Напишите функцию, которая принимает массив чисел и сначала к каждому чётному числу прибавляет 4,
+//  у каждого нечётного отнимает 2, потом убирает из массива числа, делящиеся на 13 без остатка и возвращает сумму оставшихся чисел.
+
+// function calculate(arr){
+//     let sum = 0;
+//     for(let i = 0;i<arr.length;i++){
+//         if(arr[i]%2 == 0){
+//             arr[i] +=4;
+//             if(arr[i]%13 == 0){
+//                 arr.splice(i , 1);
+//                 i--;
+//             }
+//         }
+//         else{
+//             arr[i] -=2;
+//             if(arr[i]%13 == 0){
+//                 arr.splice(i , 1);
+//                 i--;
+//             }
+//         }
+//     }
+//     for(let i = 0;i<arr.length;i++){
+//         sum +=arr[i];
+//     }
+//     return sum;
+// }
+// console.log(calculate([15, 2, 3, 5, 6]));
+
+// Напишите функцию transformUpvotes(arr),
+//  которая принимает массив сокращенных записей количества лайков ['10k', '2.3k', '5k', '32', '28.4k'] и возвращает массив чисел [10000, 2300, 5000, 32, 28400].
+
+// function transformUpvotes(arr){
+//     for(let i = 0;i<arr.length;i++){
+//         arr[i] = parseInt(arr[i] , 10) * 1000;
+//     }
+//     return arr;
+// }
+
+// console.log(transformUpvotes(['10k', '2.3k', '5k', '32', '28.4k']))

@@ -6,23 +6,17 @@ let q = 0;
 function showElement(element) {
   element.style.opacity = 0;
   element.style.display = 'block';
-  (function fade() {
-    let val = parseFloat(element.style.opacity);
-    if (!((val += 0.1) > 1)) {
-      element.style.opacity = val;
-      requestAnimationFrame(fade);
-    }
-  })();
+  let timerId = setInterval(element.style.opacity += 0.1, 200);
+  // if(element.style.opacity == 1){
+   	setTimeout(clearInterval(timerId), 2000);
+  // }
 }
 function hideElement(element) {
   element.style.opacity = 1;
-  (function fade() {
-    if ((element.style.opacity -= 0.1) < 0) {
-    } else {
-      requestAnimationFrame(fade);
-    }
-  })();
-}
+  let timerId = setInterval(element.style.opacity -= 0.1, 200);
+ // if(element.style.opacity == 0){
+   	setTimeout(clearInterval(timerId), 2000);
+ //  }
 function previous(){
 	hideElement(sliderImg);
 	if(img.at(q) == img[0]){

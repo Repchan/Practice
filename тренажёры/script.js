@@ -407,3 +407,117 @@
 // }
 
 // console.log(transformUpvotes(['10k', '2.3k', '5k', '32', '28.4k']))
+
+// Напишите функцию getInfo(persons), которая принимает массив объектов, описывающих человека, 
+// имеющих поля {name, age}, и возвращает объект со средним возрастом и именем самого старшего человека.
+
+ //  function getInfo(persons){
+ //      let ageS = 0;
+ //      let old = 0;
+ //      for(let i = 0;i<persons.length;i++){
+ //          ageS += persons[i][`age`];
+ //          if(persons[old][`age`] < persons[i][`age`]){
+ //                  old = i; 
+ //          }
+ //      }
+ //      return `Средний возраст = ${ageS/persons.length}, Самый старый человек - ${persons[old][`name`]} и ему ${persons[old][`age`]}`
+ //  }
+
+ // console.log(getInfo([{name : `Alfred`,age: 25} , {name:`Gerald` , age: 14} , {name : `Stas`,age: 20} , {name : `Ded`,age: 70}]));
+
+// Напишите функцию, которая принимает массив массивов вида 
+// [['ключ1', 'значение1'], ['ключ2', 'значение2']] и возвращает объект вида: {ключ1: 'значение1', ключ2: 'значение2'}.
+
+ // function objFromArr(arr){
+ //     let obj = new Object();
+ //       for(let i = 0;i<arr.length;i++){
+ //         obj[arr[i][0]] = arr[i][1];
+ //     }
+ //     return obj;
+ // }
+ // console.log(objFromArr([[`name`,`German`],[`age`,15]]));
+
+//Xhr + localStorage
+
+// let xhr = new XMLHttpRequest();
+// let myJSON = localStorage.getItem(`myJSON`);
+// if(myJSON){  
+//     myJSON = JSON.parse(myJSON);
+//     console.log(myJSON);
+// }
+// else{
+//     xhr.open(`GET` , `https://picsum.photos/v2/list/?limit=1`);
+//     xhr.onload = function(){
+//         let result = JSON.parse(xhr.response);
+//        localStorage.setItem(`myJSON` , JSON.stringify(result))
+    
+//     }
+//     xhr.send();
+//     console.log(`Перезапусти`);
+
+// }
+
+// Напишите функцию random(min, max), которая принимает минимальное и максимальное значение и 
+// возвращает целое случайное число n, такое, что: min ≤ n ≤ max. Эта функция понадобится нам для следующих заданий.
+
+// Используйте Math.random(), умножение и сложение.
+
+function random(min, max){
+  let n = Math.round(Math.random() * (max - min) + min);
+  return n;
+}
+
+// Сверстайте 5 параграфов с текстом. С помощью JS меняйте цвет фона каждого параграфа на случайный каждую секунду. 
+// Создайте массив с названиями цветов 
+// ['blue', 'cyan', ...] и с помощью функции из предыдущего задания выбирайте случайный цвет из массива.
+
+// let colorP = document.querySelectorAll(`.color`);
+// console.log(colorP);
+// let practise = document.getElementById(`practise`);
+// let colors = ['blue', 'cyan' , `red` , `green` , `yellow` , `white` , `lime` , `grey`]
+// let timer = setInterval(function (){
+//   colorP[`0`].style.backgroundColor = `${colors[random(0,colors.length)]}`
+//   colorP[`1`].style.backgroundColor = `${colors[random(0,colors.length)]}`
+//   colorP[`2`].style.backgroundColor = `${colors[random(0,colors.length)]}`
+//   colorP[`3`].style.backgroundColor = `${colors[random(0,colors.length)]}`
+//   colorP[`4`].style.backgroundColor = `${colors[random(0,colors.length)]}`
+// },1000)
+
+// Напишите функцию, которая принимает HTML в виде строки и возвращает HTML без элементов div (и всего, что внутри), 
+// все остальные элементы сохраняются. Используйте createElement, querySelectorAll и innerHTML.
+
+// const removeDivs = html => {
+//   const root = document.createElement('span');
+//   root.innerHTML = html;
+//   const divs = root.querySelectorAll('div');
+//   divs.forEach(div => {
+//     div.parentNode.removeChild(div);
+//   })
+//   return root.innerHTML;
+// }
+
+// const html = '<div></div>Hello<div><div><p>Hello world</p></div></div> <b>World!</b>';
+
+// alert( removeDivs(html));
+// alert( removeDivs(html) === 'Hello <b>World!</b>');
+
+// Создайте кнопку, которая при клике создает другую кнопку, которая, в свою очередь, создаёт другую кнопку, и т.д.
+
+// Пояснение: Используйте HTML, JS и CSS.
+
+// let buttonsDiv = document.getElementById(`buttons`);
+// let btn = document.getElementById(`btn`);
+
+// let createNewButton = (text) => {
+//   let newButton = document.createElement('button');
+//   newButton.innerHTML = text;
+//   newButton.type = 'button';
+//   newButton.addEventListener('click', () => createNewButton(text));
+//   buttonsDiv.appendChild(newButton);
+// };
+
+// btn.addEventListener(`click` , createNewButton(`Hажми меня`))
+
+// Создайте раскрывающийся блок (accordion). Сверху блок с заголовком, 
+// при нажатии на который снизу показывается блок с текстом, при повторном нажатии блок с текстом скрывается.
+
